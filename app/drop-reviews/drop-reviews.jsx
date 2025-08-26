@@ -5,20 +5,6 @@ import * as Yup from "yup";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase.config";
 import { FiLoader } from "react-icons/fi";
-<<<<<<< HEAD
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-=======
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
@@ -31,7 +17,6 @@ const style = {
   width: 400,
   bgcolor: "background.paper",
   border: "2px solid #000",
->>>>>>> 35a84ddf958dc77eb401656c0e8cb39f215ba94c
   boxShadow: 24,
   p: 4,
 };
@@ -69,11 +54,7 @@ const DropReviews = ({ session }) => {
       const docRef = await addDoc(collection(db, "reviews"), reviewData);
       handleOpen()
 
-<<<<<<< HEAD
-      ("Document written with ID: ", docRef.id);
-=======
       // console.log("Document written with ID: ", docRef.id);
->>>>>>> 35a84ddf958dc77eb401656c0e8cb39f215ba94c
       resetForm();
     } catch (error) {
       console.error("Error adding data", error);
@@ -143,32 +124,18 @@ const DropReviews = ({ session }) => {
         </Formik>
       </section>
 
-<<<<<<< HEAD
-       <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"   
-=======
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
->>>>>>> 35a84ddf958dc77eb401656c0e8cb39f215ba94c
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-<<<<<<< HEAD
-           Post Successful
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Your Review has been succesfully sent.
-=======
             Post Sucessfull
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Your Review has been sucessfully sent.
->>>>>>> 35a84ddf958dc77eb401656c0e8cb39f215ba94c
           </Typography>
         </Box>
       </Modal>
