@@ -8,7 +8,7 @@ export default function Home() {
       <section className="min-h-dvh bg-black/40 flex items-center justify-center">
         <div className="lg:max-w-4xl max-lg:p-3 space-y-10">
           <h1 className="text-white text-center md:text-4xl text-3xl lg:text-6xl font-extrabold">
-            Welcome to <span className="italic text-yellow-500">InkPress</span>
+            Welcome to  <span className="italic text-yellow-500">InkPress</span>
           </h1>
           <p className="text-gray-200 text-center text-xl font-semibold">
             A digital hub where we share book reviews. Designed for book lovers
